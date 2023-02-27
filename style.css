@@ -11,7 +11,6 @@ h1,h2,h3,h4,p{
 }
 .banner{
     height: 100vh;
-    position: relative;
     width: 100%;
 }
 .container{
@@ -35,19 +34,14 @@ h1,h2,h3,h4,p{
     font-size: 30px;
 }
 .banner__box__buttons{
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-height: 350px;
-    bottom: 30px;
+    margin-top: 40px;
 }
-.banner__box__buttons button{
-    width: 100%;
-    border: none;
-    padding: 20px;
-}
-.btn-d{
-    margin-left: 20px;
+.banner__box__buttons a{
+    text-decoration: none;
+    background-color: #c3c3c3;
+    color: #000;
+    padding:5px 25px;
+    border-radius:10px;
 }
 /*section proyects*/
 .section__proyects_title{
