@@ -59,7 +59,6 @@ h1,h2,h3,h4,p{
     grid-template-columns: 1fr 1fr;
 }
 .box{
-    background-color: aqua;
     height: 150px;
     padding: 10px;
 }
@@ -85,5 +84,8 @@ h1,h2,h3,h4,p{
     }
     .banner__cont__img img{
         border-radius: 0px;
+    }
+    .section__proyects{
+        margin-top: 150px;
     }
 }
