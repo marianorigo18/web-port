@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Permanent+Marker&display=swap');
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    /* font-family: 'Permanent Marker', cursive; */
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+.banner{
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    margin: auto;
+}
+.banner__cont__img{
+    padding: 15px;
+}
+.banner__cont__img img{
+    border-radius: 15px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 320px;
+}
+.banner__cont__text{
+    padding: 0 15px;
+    font-size: 30px;
+}
+.banner__box__buttons{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-height: 350px;
+    bottom: 30px;
+}
+.banner__box__buttons button{
+    width: 100%;
+    border: none;
+    padding: 20px;
+}
+.btn-d{
+    margin-left: 20px;
+}
+/*other section*/
+.section__proyects_title{
+    text-align: center;
+    margin: 50px 0;
+}
+.section__proyects_proyects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box{
+    background-color: aqua;
+    height: 150px;
+    padding: 10px;
+}
+.content{
+    height: 100%;
+    background-color: #c2c2c2;
+    border-radius: 10px;
+}
+/*media*/
+@media(min-width: 600px) {
+    .banner{
+        max-height: 350px;
+        margin-top: 200px;
+        border-radius: 5px;
+        transition: .3s;
+    }
+    .banner:hover{
+        box-shadow: 0 1px 30px rgb(0 0 0 / 10%);
+        scale: 1.01;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner__cont__img img{
+        border-radius: 0px;
+    }
+}
